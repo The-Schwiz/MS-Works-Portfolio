@@ -34,6 +34,7 @@ body {
   /* nav container flex box and content position */
   nav {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     padding-top: 30px;
   
@@ -42,7 +43,7 @@ body {
   /* Position of nav links */
   li {
     display: inline-flex;
-    padding: 10px;
+    padding: 5px;
     margin-right: 20px;
   
   }
@@ -309,6 +310,7 @@ body {
       display: flex;
       flex-direction: column;
       text-align: center;
+      /* justify-content: space-around; */
     }
   
   }
@@ -317,10 +319,22 @@ body {
   @media screen and (max-width: 600px) {
     nav {
       display: flex;
+      flex: 1;
       flex-direction: column;
+      /* align-items: center; */
       text-align: center;
       background-color: rgb(14, 14, 84);
       height: 20px;
+      /* justify-content: space-between; */
     }
   
   }
+
+   /* At screen width of 397ox or less the header shrinks */
+   @media screen and (max-width: 397px) {
+    header h1 {
+      font-size: 200%;
+
+    }
+
+      
